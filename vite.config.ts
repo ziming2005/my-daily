@@ -16,8 +16,8 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         includeAssets: ['logo.jpeg', 'logo-192.png', 'logo-512.png'],
         manifest: {
-          name: 'MH Daily',
-          short_name: 'MH Daily',
+          name: 'My Daily',
+          short_name: 'My Daily',
           description: 'Your personal productivity dashboard with calendar, tasks, and whiteboard',
           theme_color: '#F5F5F5',
           background_color: '#F5F5F5',

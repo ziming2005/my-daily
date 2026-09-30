@@ -248,7 +248,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin, onSignu
                     <div className="mt-5 mb-8 overflow-hidden">
                         <h2
                             key={mode}
-                            className="text-3xl md:text-4xl font-brand uppercase tracking-wide py-1 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.7)]"
+                            className="text-3xl md:text-4xl font-brand font-semibold uppercase tracking-wide py-1 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.7)]"
                         >
                             {mode === 'login' ? 'Member Login' : 'Register Now'}
                         </h2>

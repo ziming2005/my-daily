@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { supabase } from './lib/supabase';
-import { FcLinux } from "react-icons/fc";
 import { HashRouter, Routes, Route, NavLink, useLocation } from 'react-router-dom';
 import { PiCloverDuotone } from "react-icons/pi";
 import { SiApachehadoop } from "react-icons/si";
@@ -206,18 +205,17 @@ const TopNavigation: React.FC<TopNavigationProps> = ({ toggleTheme, isDarkMode, 
     <nav className="h-20 flex items-center justify-between px-4 sm:px-6 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border-light dark:border-border-dark shrink-0 z-50 relative">
       {/* Left: Brand */}
       <div className="flex items-center gap-4 w-50 hidden sm:flex">
-        <div className="size-11 rounded-lg bg-primary/10 flex items-center justify-center text-slate-900 text-[40px]">
-          <FcLinux />
+        <div className="size-11 rounded-lg bg-primary/10 flex items-center justify-center text-red-500 text-[28px]">
+          <PiCloverDuotone />
         </div>
-        <h1 className="flex items-center gap-2 text-3xl font-brand text-slate-900 dark:text-white leading-none tracking-tight">
-          MH Daily
-          <span className="text-red-500 scale-100 mt-1"><PiCloverDuotone /></span>
+        <h1 className="flex items-center gap-2 text-3xl font-brand font-semibold text-slate-900 dark:text-white leading-none tracking-tight">
+          My Daily
         </h1>
       </div>
       {/* Mobile Brand Icon Only */}
       <div className="flex items-center sm:hidden">
-        <div className="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-slate-900 text-[36px]">
-          <FcLinux />
+        <div className="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-red-500 text-[24px]">
+          <PiCloverDuotone />
         </div>
       </div>
 
