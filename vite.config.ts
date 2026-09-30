@@ -14,7 +14,6 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['logo.jpeg', 'logo-192.png', 'logo-512.png'],
         manifest: {
           name: 'My Daily',
           short_name: 'My Daily',
@@ -25,20 +24,6 @@ export default defineConfig(({ mode }) => {
           orientation: 'portrait',
           scope: '/',
           start_url: '/',
-          icons: [
-            {
-              src: 'logo-192.png',
-              sizes: '192x192',
-              type: 'image/png',
-              purpose: 'any maskable'
-            },
-            {
-              src: 'logo-512.png',
-              sizes: '512x512',
-              type: 'image/png',
-              purpose: 'any maskable'
-            }
-          ]
         },
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,jpeg,jpg,woff,woff2}'],
